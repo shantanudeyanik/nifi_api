@@ -1,4 +1,6 @@
-FROM python:3.10
+FROM python:3.11-alpine
+
+LABEL maintainer="shantanudeyanik"
 
 WORKDIR /app
 
@@ -10,7 +12,7 @@ EXPOSE 8000
 
 ENV NAME World
 
-CMD ["/bin/bash" "gunicorn" "-w" "4" "-b" "0.0.0.0:8000" "app:app"]
+CMD ["python" "app.py"]
 
 
 
