@@ -15,4 +15,4 @@ def process_data_route():
         return jsonify({"error": str(e)}), 400
 
 if __name__ == '__main__':
-    app.run("0.0.0.0",debug=True)
+    app.run("0.0.0.0",debug=False)
