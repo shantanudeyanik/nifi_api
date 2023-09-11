@@ -10,9 +10,11 @@ RUN pip install -r requirements.txt
 
 EXPOSE 8000
 
-ENV NAME World
+#ENV NAME World
 
-CMD ["python" "app.py"]
+ENTRYPOINT ["python"]
+
+CMD ["app.py"]
 
 
 
