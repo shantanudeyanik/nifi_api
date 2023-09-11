@@ -12,10 +12,10 @@ EXPOSE 8000
 
 #ENV NAME World
 
-ENTRYPOINT ["gunicorn"]
+#ENTRYPOINT ["gunicorn"]
 
 #CMD ["app.py"]
-CMD ["-w" "4" "-b" "0.0.0.0:8000" "app:app"]
+CMD ["gunicorn","-w","4","-b","0.0.0.0:8000","app:app"]
 
 
 
