@@ -10,7 +10,7 @@ EXPOSE 8000
 
 ENV NAME World
 
-CMD ["gunicorn" "-w" "4" "-b" "0.0.0.0:8000" "app:app"]
+CMD ["/bin/bash" "gunicorn" "-w" "4" "-b" "0.0.0.0:8000" "app:app"]
 
 
 
